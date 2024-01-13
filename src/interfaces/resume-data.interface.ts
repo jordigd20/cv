@@ -1,11 +1,9 @@
 export interface ResumeData {
   name: string;
   title: string;
-  website: {
-    url: string;
-    name: string;
-  };
   contact: Contact;
+  about: string;
+  location: string;
   work: Work[];
   education: Education[];
   languages: Language[];
@@ -15,21 +13,27 @@ export interface ResumeData {
 export interface Contact {
   email: string;
   tel: string;
+  website: {
+    url: string;
+    name: string;
+  };
   social: Social[];
 }
 
 export interface Social {
-  name: 'github' | 'linkedin';
+  name: string;
   url: string;
-  icon: string;
+  icon: 'github' | 'linkedin';
 }
 
 export interface Work {
   title: string;
   role: string;
+  url?: string;
   badges: string[];
   description: string;
-  accomplished: string[];
+  accomplishments: string[];
+  accomplishementsTitle: string;
   start: string;
   end: string;
 }

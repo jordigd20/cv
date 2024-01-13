@@ -2,22 +2,25 @@ import { ResumeData } from '../interfaces/resume-data.interface';
 
 export const RESUME_DATA: ResumeData = {
   name: 'Jordi Gómez Devesa',
-  title: 'Multimedia Engineer',
-  website: {
-    url: 'https://jordigomez.dev',
-    name: 'jordigomez.dev'
-  },
+  title: 'Desarrollador Full Stack',
+  about:
+    'Ingeniero Multimedia graduado en la Universidad de Alicante con experencia en el desarrollo de software con proyectos evaluados y aprobados por la Universidad',
+  location: 'Benidorm, España',
   contact: {
     email: 'jordigd8@gmail.com',
     tel: '+34605188741',
+    website: {
+      url: 'https://jordigomez.dev',
+      name: 'jordigomez.dev'
+    },
     social: [
       {
-        name: 'github',
+        name: 'github.com/jordigd20/',
         url: 'https://github.com/jordigd20',
         icon: 'github'
       },
       {
-        name: 'linkedin',
+        name: '/in/jordi-gomez-devesa/',
         url: 'https://www.linkedin.com/in/jordi-gomez-devesa/',
         icon: 'linkedin'
       }
@@ -26,25 +29,29 @@ export const RESUME_DATA: ResumeData = {
   work: [
     {
       title: 'CollabTask',
-      role: 'Multimedia Engineer at the University of Alicante',
+      role: 'Desarrollador Full Stack',
+      url: 'https://jordigomez.dev/projects/collabtask',
       badges: [],
       description:
         'Desarrollé para el TFG de Ingeniería Multimedia una app sobre gestión de tareas colaborativas, con el objetivo de realizar un reparto de tareas justo y equilibrado entre un grupo de personas.',
-      accomplished: [
+      accomplishementsTitle: 'Funciones desempeñadas:',
+      accomplishments: [
         'Diseño de las interfaces y estilo de la aplicación',
         'Implementación del frontend utilizando Angular e Ionic',
         'Diseño y desarrollo de la arquitectura backend con Firebase como BaaS'
       ],
-      start: 'September 2022',
-      end: 'June 2023'
+      start: '2022',
+      end: '2023'
     },
     {
       title: 'NutriUs',
-      role: 'Multimedia Engineer at the University of Alicante',
+      role: 'Desarrollador Full Stack',
+      url: 'https://jordigomez.dev/projects/nutrius',
       badges: [],
       description:
         'Junto con un equipo de 5 personas desarrollé para el 4º año de Ingeniería Multimedia una aplicación web sobre nutrición infantil que ofrece menús y dietas para los niños, un entorno gráfico 3D atractivo para ellos, y una gestión del seguimiento/evolución para los padres.',
-      accomplished: [
+      accomplishementsTitle: 'Funciones desempeñadas:',
+      accomplishments: [
         'Diseño e implementación del frontend con Angular',
         'Realización de un API Rest con NodeJS y MongoDB',
         'Creación e integración en el sistema de un asistente virtual con Dialogflow',
@@ -52,124 +59,39 @@ export const RESUME_DATA: ResumeData = {
         'Recopilación de estadísticas según los KPI de la aplicación',
         'Sistema de animaciones, movimientos de cámara e iluminación en un entorno gráfico 3D con WebGL'
       ],
-      start: 'September 2022',
-      end: 'June 2023'
+      start: '2022',
+      end: '2023'
     }
   ],
   education: [
     {
-      school: 'University of Alicante',
-      degree: "Bachelor's Degree in Multimedia Engineering",
-      start: 'September 2018',
-      end: 'June 2023'
+      school: 'Universidad de Alicante (UA)',
+      degree: 'Grado en Ingeniería Multimedia',
+      start: '2018',
+      end: '2023'
     }
   ],
   languages: [
     {
-      name: 'English',
-      level: 'Trinity College London B1 Certificate'
+      name: 'Español y Valenciano',
+      level: 'Nativo'
     },
     {
-      name: 'Native Spanish and Valencian',
-      level: 'Native'
+      name: 'Inglés',
+      level: 'Nivel intermedio (Certificado B1)'
     }
   ],
   skills: [
-    'Fast learning',
-    'Teamwork',
-    'Web development',
-    'Mobile development',
-    'Frontend development',
-    'Backend development',
-    'Object Oriented Programming',
+    'Aprendizaje rápido',
+    'Trabajo en equipo',
+    'Metodologías ágiles',
+    'Gestión del tiempo',
+    'Desarrollo de software',
+    'Desarrollo frontend',
+    'Desarrollo backend',
+    'Programación Orientada a Objetos (POO)',
     'Angular',
-    'NodeJS'
-  ]
-};
-
-export const SPANISH_RESUME_DATA: ResumeData = {
-  name: 'Jordi Gómez Devesa',
-  title: 'Multimedia Engineer',
-  website: {
-    url: 'https://jordigomez.dev',
-    name: 'jordigomez.dev'
-  },
-  contact: {
-    email: 'jordigd8@gmail.com',
-    tel: '+34605188741',
-    social: [
-      {
-        name: 'github',
-        url: 'https://github.com/jordigd20',
-        icon: 'github'
-      },
-      {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/in/jordi-gomez-devesa/',
-        icon: 'linkedin'
-      }
-    ]
-  },
-  work: [
-    {
-      title: 'CollabTask',
-      role: 'Multimedia Engineer at the University of Alicante',
-      badges: [],
-      description:
-        'Desarrollé para el TFG de Ingeniería Multimedia una app sobre gestión de tareas colaborativas, con el objetivo de realizar un reparto de tareas justo y equilibrado entre un grupo de personas.',
-      accomplished: [
-        'Diseño de las interfaces y estilo de la aplicación',
-        'Implementación del frontend utilizando Angular e Ionic',
-        'Diseño y desarrollo de la arquitectura backend con Firebase como BaaS'
-      ],
-      start: 'September 2022',
-      end: 'June 2023'
-    },
-    {
-      title: 'NutriUs',
-      role: 'Multimedia Engineer at the University of Alicante',
-      badges: [],
-      description:
-        'Junto con un equipo de 5 personas desarrollé para el 4º año de Ingeniería Multimedia una aplicación web sobre nutrición infantil que ofrece menús y dietas para los niños, un entorno gráfico 3D atractivo para ellos, y una gestión del seguimiento/evolución para los padres.',
-      accomplished: [
-        'Diseño e implementación del frontend con Angular',
-        'Realización de un API Rest con NodeJS y MongoDB',
-        'Creación e integración en el sistema de un asistente virtual con Dialogflow',
-        'Gestión de pagos con el API de Paypal',
-        'Recopilación de estadísticas según los KPI de la aplicación',
-        'Sistema de animaciones, movimientos de cámara e iluminación en un entorno gráfico 3D con WebGL'
-      ],
-      start: 'September 2022',
-      end: 'June 2023'
-    }
-  ],
-  education: [
-    {
-      school: 'University of Alicante',
-      degree: "Bachelor's Degree in Multimedia Engineering",
-      start: 'September 2018',
-      end: 'June 2023'
-    }
-  ],
-  languages: [
-    {
-      name: 'English',
-      level: 'Trinity College London B1 Certificate'
-    },
-    {
-      name: 'Native Spanish and Valencian',
-      level: 'Native'
-    }
-  ],
-  skills: [
-    'Fast learning',
-    'Teamwork',
-    'Web development',
-    'Mobile development',
-    'Frontend development',
-    'Backend development',
-    'Object Oriented Programming',
-    'Angular',
-    'NodeJS'
+    'HTML y CSS',
+    'Node.js'
   ]
 };
