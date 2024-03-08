@@ -1,10 +1,10 @@
-import { ResumeData } from '../interfaces/resume-data.interface';
+import type { ResumeData } from '../interfaces/resume-data.interface';
 
 export const RESUME_DATA: ResumeData = {
   name: 'Jordi Gómez Devesa',
   title: 'Desarrollador Full Stack',
   about:
-    'Ingeniero Multimedia graduado en la Universidad de Alicante con experencia en el desarrollo de software con proyectos evaluados y aprobados por la Universidad',
+    'Ingeniero Multimedia graduado en la Universidad de Alicante con experencia en el desarrollo de software con proyectos evaluados y aprobados por la Universidad.',
   location: 'Benidorm, España',
   contact: {
     email: 'jordigd8@gmail.com',
