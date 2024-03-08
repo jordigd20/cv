@@ -8,14 +8,17 @@ export const RESUME_DATA: ResumeData = {
   location: 'Benidorm, España',
   contact: {
     email: 'jordigd8@gmail.com',
-    tel: '+34605188741',
+    tel: {
+      url: '+34605188741',
+      display: '(34) 605 18 87 41'
+    },
     website: {
       url: 'https://jordigomez.dev',
       name: 'jordigomez.dev'
     },
     social: [
       {
-        name: 'github.com/jordigd20/',
+        name: 'jordigd20',
         url: 'https://github.com/jordigd20',
         icon: 'github'
       },

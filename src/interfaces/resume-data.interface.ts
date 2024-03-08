@@ -12,7 +12,10 @@ export interface ResumeData {
 
 export interface Contact {
   email: string;
-  tel: string;
+  tel: {
+    url: string;
+    display: string;
+  }
   website: {
     url: string;
     name: string;

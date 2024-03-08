@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets';
+import MyPhoto from '../assets/photo.webp';
+import { RESUME_DATA } from '../data/resume-data';
+import Github from '../icons/Github.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
+import Email from '../icons/Email.astro';
+import Telephone from '../icons/Telephone.astro';
+import Website from '../icons/Website.astro';
+import Location from '../icons/Location.astro';
+import type { Social } from '../interfaces/resume-data.interface';
+
+interface SocialMedia extends Social {
+  SocialIcon: any;
+}
+
+const { contact, name, title, about, location } = RESUME_DATA;
+const { email, tel, website, social } = contact;
+
+const socialMedia = social.map(
+  (social): SocialMedia => ({
+    ...social,
+    SocialIcon: social.icon === 'github' ? Github : LinkedIn
+  })
+);
+---
+
+<header>
+  <nav class="mb-2 flex items-center text-primary text-xs tracking-tight font-medium">
+    <a class="m-[10px] inline-flex items-center gap-1" href={`mailto:${email}`}>
+      <Email />
+      {email}
+    </a>
+
+    <a class="m-[10px] inline-flex items-center gap-1" href={`tel:${tel.url}`}>
+      <Telephone />
+      {tel.display}
+    </a>
+
+    <a class="m-[10px] inline-flex items-center gap-1" href={website.url}>
+      <Website />
+      jordigomez.dev
+    </a>
+
+    {
+      socialMedia.map(({ name, url, SocialIcon }) => (
+        <a class="m-[10px] inline-flex items-center gap-1" href={url}>
+          <SocialIcon className="size-3.5" />
+          {name}
+        </a>
+      ))
+    }
+  </nav>
+
+  <div class="flex gap-4">
+    <Image
+      class="object-cover aspect-square w-36 h-36 rounded-md"
+      src={MyPhoto}
+      alt="Una foto de Jordi"
+      width="144"
+      height="144"
+    />
+
+    <div>
+      <h1 class="font-bold text-4xl">{name}</h1>
+      <h2 class="font-bold text-xl text-primary">{title}</h2>
+
+      <p class="mt-1 text-sm text-gray-800">
+        {about}
+      </p>
+
+      <p class="mt-1 inline-flex items-center text-sm text-gray-800">
+        <Location className="mb-0.5" />
+        {location}
+      </p>
+    </div>
+  </div>
+</header>
