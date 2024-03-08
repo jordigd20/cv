@@ -15,9 +15,11 @@ export default {
           "2xl": "1400px",
         },
       },
+      colors: {
+        primary: 'var(--primary)'
+      },
       fontFamily: {
-        sans: ['Roboto Condensed', ...defaultTheme.fontFamily.sans],
-        // sans: ['Roboto Mono Variable', ...defaultTheme.fontFamily.sans],
+        sans: ['Onest Variable', ...defaultTheme.fontFamily.sans],
       },
     },
   },

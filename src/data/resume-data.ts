@@ -92,6 +92,8 @@ export const RESUME_DATA: ResumeData = {
     'Programación Orientada a Objetos (POO)',
     'Angular',
     'HTML y CSS',
-    'Node.js'
+    'Node.js',
+    'PostgreSQL',
+    'MongoDB',
   ]
 };

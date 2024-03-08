@@ -5,12 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource-variable/roboto-mono':
-    specifier: ^5.0.17
-    version: 5.0.17
-  '@fontsource/roboto-condensed':
-    specifier: ^5.0.14
-    version: 5.0.14
+  '@fontsource-variable/onest':
+    specifier: ^5.0.3
+    version: 5.0.3
   ejs:
     specifier: ^3.1.9
     version: 3.1.9
@@ -252,12 +249,8 @@ packages:
     dev: true
     optional: true
 
-  /@fontsource-variable/roboto-mono@5.0.17:
-    resolution: {integrity: sha512-+FyoiEmO2r/kiwPnsPtATK2ROMgNwCnVSvvs+K38GMLIgLSSk4cNqU3GCqJDMSvAPHMYd0gFPGKStFh+yLqd9Q==}
-    dev: false
-
-  /@fontsource/roboto-condensed@5.0.14:
-    resolution: {integrity: sha512-ZNBHUhE5/3z9efMIjpBblFsfLHgGotJjlzKd5Q8DODbkRRWy6Yh+JnbiaJZ8zwQyHyYBNOolk57BG4BcjSzrRg==}
+  /@fontsource-variable/onest@5.0.3:
+    resolution: {integrity: sha512-vqeDrKg3Ysl4rOepz2N6PnFZ+/EjrmhOv9/pJ+tCn0y00ralsEsCog0xPK6T1hx8Vt70agNR4Jb9C+KWr/K3sg==}
     dev: false
 
   /@isaacs/cliui@8.0.2:
