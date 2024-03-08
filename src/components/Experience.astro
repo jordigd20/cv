@@ -1,0 +1,48 @@
+---
+import { RESUME_DATA } from '../data/resume-data';
+import Link from '../icons/Link.astro';
+
+const { work: workExperience } = RESUME_DATA;
+---
+
+<section class="my-4 space-y-1">
+  <h3 class="font-bold text-xl">Experiencia</h3>
+
+  <div class="space-y-4">
+    {
+      workExperience.map(
+        ({ title, role, url, description, accomplishementsTitle, accomplishments, start, end }) => (
+          <article>
+            <header class="flex justify-between items-center">
+              <h4 class="text-primary">
+                <b>{role}</b> en
+                <a class="inline-flex items-center underline font-medium" href={url}>
+                  {title}
+                  <Link className="mb-3" />
+                </a>
+              </h4>
+
+              <p class="text-gray-800 text-sm">
+                {start} - {end}
+              </p>
+            </header>
+
+            <div class="space-y-4">
+              <div>
+                <p class="text-sm text-gray-800">{description}</p>
+              </div>
+              <div class="text-sm text-gray-800">
+                <b class="font-medium">{accomplishementsTitle}</b>
+                <ul class="list-['—'] pl-2">
+                  {accomplishments.map((accomplishment) => (
+                    <li class="pl-2">{accomplishment}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </article>
+        )
+      )
+    }
+  </div>
+</section>
