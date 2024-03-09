@@ -1,0 +1,35 @@
+---
+import { RESUME_DATA } from '../data/resume-data';
+import Link from '../icons/Link.astro';
+
+const { projects } = RESUME_DATA;
+---
+
+<section class="my-4 space-y-1">
+  <h3 class="font-bold text-xl">Otros proyectos</h3>
+
+  <div class="grid grid-cols-3 gap-2">
+    {
+      projects.map(({ title, url, description, techStack }) => (
+        <article class="p-3 border rounded-md space-y-2 shadow-sm">
+          <a
+            class="inline-flex items-center font-bold text-primary underline"
+            href={url}
+            target="_blank"
+          >
+            {title}
+            <Link className="mb-3" />
+          </a>
+
+          <p class="text-sm text-gray-800">{description}</p>
+
+          <footer class="flex flex-wrap items-center gap-1 text-xs">
+            {techStack.map((tech) => (
+              <span class="py-0.5 px-3 bg-gray-100 rounded-md">{tech}</span>
+            ))}
+          </footer>
+        </article>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+import { RESUME_DATA } from '../data/resume-data';
+
+const { languages } = RESUME_DATA;
+---
+
+<section class="my-4 space-y-1">
+  <h3 class="font-bold text-xl">Idiomas</h3>
+
+  <div class="text-sm">
+    {
+      languages.map(({ name, level }) => (
+        <p class="text-gray-800">
+          <b class="text-primary">{name}</b>: {level}
+        </p>
+      ))
+    }
+  </div>
+</section>

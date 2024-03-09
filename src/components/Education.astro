@@ -1,0 +1,23 @@
+---
+import { RESUME_DATA } from '../data/resume-data';
+
+const { education } = RESUME_DATA;
+---
+
+<section class="my-4 space-y-1">
+  <h3 class="font-bold text-xl">Educación</h3>
+
+  {
+    education.map(({ school, degree, start, end }) => (
+      <div class="text-sm">
+        <div class="flex items-center justify-between">
+          <h4 class="font-bold text-primary">{school}</h4>
+          <span class="text-gray-800">
+            {start} - {end}
+          </span>
+        </div>
+        <p class="text-gray-800">{degree}</p>
+      </div>
+    ))
+  }
+</section>

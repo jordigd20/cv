@@ -8,6 +8,7 @@ export interface ResumeData {
   education: Education[];
   languages: Language[];
   skills: string[];
+  projects: Project[];
 }
 
 export interface Contact {
@@ -51,4 +52,11 @@ export interface Education {
 export interface Language {
   name: string;
   level: string;
+}
+
+export interface Project {
+  title: string;
+  url: string;
+  description: string;
+  techStack: string[];
 }

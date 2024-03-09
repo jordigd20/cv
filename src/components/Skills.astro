@@ -1,0 +1,13 @@
+---
+import { RESUME_DATA } from '../data/resume-data';
+
+const { skills } = RESUME_DATA;
+---
+
+<section class="my-4 space-y-1">
+  <h3 class="font-bold text-xl">Habilidades</h3>
+
+  <div class="flex flex-wrap items-center text-sm gap-1">
+    {skills.map((skill) => <span class="py-0.5 px-3 bg-gray-100 rounded-md">{skill}</span>)}
+  </div>
+</section>
