@@ -1,0 +1,63 @@
+name: Update Portfolio Repository
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm and dependencies
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: |
+            - args: [--frozen-lockfile]
+
+      - name: Build the app and generate the pdf
+        run: pnpm run generate
+
+      - name: Commit and push the changes
+        run: |
+          git config --global user.email "jordigd8@gmail.com"
+          git config --global user.name "jordigd20"
+          git commit -am "automated .pdf update"
+          git push
+
+  push-to-portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm and dependencies
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: |
+            - args: [--frozen-lockfile]
+
+      - name: Build the app and generate the pdf
+        run: pnpm run generate
+
+      - name: Pushes to the portfolio repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: output/
+          destination-github-username: jordigd20
+          destination-repository-name: portfolio
+          user-email: jordigd8@gmail.com
+          commit-message: update cv.pdf - ORIGIN_COMMIT
+          target-branch: master
+          target-directory: public/assets/cv
