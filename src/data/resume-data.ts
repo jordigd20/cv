@@ -62,8 +62,8 @@ export const RESUME_DATA: ResumeData = {
         'Recopilación de estadísticas según los KPI de la aplicación',
         'Sistema de animaciones, movimientos de cámara e iluminación en un entorno gráfico 3D con WebGL'
       ],
-      start: '2022',
-      end: '2023'
+      start: '2021',
+      end: '2022'
     }
   ],
   education: [
