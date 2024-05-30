@@ -102,28 +102,34 @@ export const RESUME_DATA: ResumeData = {
       title: 'Portfolio',
       url: 'https://jordigomez.dev/',
       description:
-        'Portfolio personal que cuenta con un blog, un apartado de proyectos y una página de contacto',
+        'Portfolio personal que cuenta con un blog, un apartado de proyectos y una página de contacto.',
       techStack: ['Astro', 'Typescript', 'TailwindCSS']
     },
     {
       title: 'Bookstore',
       url: 'https://bookstore-jgd.vercel.app/',
-      description: 'E-commerce con todas las funcionalidades básicas de una tienda online',
+      description: 'E-commerce con todas las funcionalidades básicas de una tienda online.',
       techStack: ['Angular', 'NestJS', 'PostgreSQL', 'API Rest', 'Stripe']
     },
     {
       title: 'Weather App',
       url: 'https://weather-app-jordigd.vercel.app/',
       description:
-        'Aplicación web de predicción meteorológica que muestra información sobre el pronóstico del tiempo',
+        'Aplicación web de predicción meteorológica que muestra información sobre el pronóstico del tiempo.',
       techStack: ['Angular', 'Typescript', 'TailwindCSS']
     },
     {
       title: 'Spotify Clone',
       url: 'https://spotify-clone-jgd.vercel.app/',
       description:
-        'Aplicación web que simula la interfaz de usuario de Spotify. Cuenta con un buscador y un reproductor de canciones',
+        'Aplicación web que simula la interfaz de usuario de Spotify. Cuenta con un buscador y un reproductor de canciones.',
       techStack: ['Angular', 'Typescript', 'TailwindCSS']
+    },
+    {
+      title: 'Task Manager',
+      url: 'https://task-manager-jgd.vercel.app/',
+      description: 'Aplicación web que permite a los usuarios gestionar tareas en tableros.',
+      techStack: ['Angular', 'Typescript', 'TailwindCSS', 'NgRx', 'Jest', 'Cypress']
     }
   ]
 };
