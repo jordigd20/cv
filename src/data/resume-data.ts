@@ -112,13 +112,6 @@ export const RESUME_DATA: ResumeData = {
       techStack: ['Angular', 'NestJS', 'PostgreSQL', 'API Rest', 'Stripe']
     },
     {
-      title: 'Weather App',
-      url: 'https://weather-app-jordigd.vercel.app/',
-      description:
-        'Aplicación web de predicción meteorológica que muestra información sobre el pronóstico del tiempo.',
-      techStack: ['Angular', 'Typescript', 'TailwindCSS']
-    },
-    {
       title: 'Spotify Clone',
       url: 'https://spotify-clone-jgd.vercel.app/',
       description:
