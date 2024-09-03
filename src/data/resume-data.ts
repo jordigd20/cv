@@ -4,8 +4,8 @@ export const RESUME_DATA: ResumeData = {
   name: 'Jordi Gómez Devesa',
   title: 'Desarrollador Full Stack',
   about:
-    'Ingeniero Multimedia graduado en la Universidad de Alicante con experencia en el desarrollo de software con proyectos evaluados y aprobados por la Universidad.',
-  location: 'Benidorm, España',
+    'Ingeniero Multimedia graduado en la Universidad de Alicante con experencia en el desarrollo de software con proyectos evaluados y aprobados por la universidad.',
+  location: 'Benidorm, España (Alicante)',
   contact: {
     email: 'jordigd8@gmail.com',
     tel: {
@@ -41,7 +41,7 @@ export const RESUME_DATA: ResumeData = {
       accomplishments: [
         'Diseño de las interfaces y estilo de la aplicación',
         'Implementación del frontend utilizando Angular e Ionic',
-        'Diseño y desarrollo de la arquitectura backend con Firebase como BaaS'
+        'Diseño y desarrollo del backend y su arquitectura con Firebase como BaaS'
       ],
       start: '2022',
       end: '2023'
@@ -57,6 +57,7 @@ export const RESUME_DATA: ResumeData = {
       accomplishments: [
         'Diseño e implementación del frontend con Angular',
         'Realización de un API Rest con NodeJS y MongoDB',
+        'Uso de la metodología Scrum para la gestión del proyecto',
         'Creación e integración en el sistema de un asistente virtual con Dialogflow',
         'Gestión de pagos con el API de Paypal',
         'Recopilación de estadísticas según los KPI de la aplicación',
@@ -73,6 +74,28 @@ export const RESUME_DATA: ResumeData = {
       start: '2018',
       end: '2023'
     }
+  ],
+  complementaryEducation: [
+    {
+      title: 'NestJS + Microservicios: Aplicaciones escalables y modulares',
+      date: '2024',
+      issuingOrganization: 'Udemy',
+    },
+    {
+      title: 'NestJS: Desarrollo backend escalable con Node',
+      date: '2024',
+      issuingOrganization: 'Udemy',
+    },
+    {
+      title: 'Principios SOLID y Clean Code',
+      date: '2023',
+      issuingOrganization: 'Udemy',
+    },
+    {
+      title: 'Ionic 6: Crear aplicaciones IOS, Android con Angular',
+      date: '2023',
+      issuingOrganization: 'Udemy',
+    },
   ],
   languages: [
     {

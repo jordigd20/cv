@@ -1,6 +1,5 @@
 ---
 import '../style.css';
-
 import Layout from '../components/Layout.astro';
 import Header from '../components/Header.astro';
 import Experience from '../components/Experience.astro';
@@ -8,12 +7,19 @@ import Education from '../components/Education.astro';
 import Languages from '../components/Languages.astro';
 import Skills from '../components/Skills.astro';
 import Projects from '../components/Projects.astro';
+import ComplementaryEducation from '../components/ComplementaryEducation.astro';
+import { RESUME_DATA } from '../data/resume-data';
+
+const { complementaryEducation } = RESUME_DATA;
 ---
 
 <Layout title="CV">
   <Header />
   <Experience />
   <Education />
+
+  {complementaryEducation && complementaryEducation.length > 0 && <ComplementaryEducation />}
+
   <Languages />
   <Skills />
   <Projects />

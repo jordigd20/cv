@@ -1,0 +1,26 @@
+---
+import { RESUME_DATA } from '../data/resume-data';
+
+const { complementaryEducation } = RESUME_DATA;
+---
+
+<section class="my-4 space-y-1">
+  <h3 class="font-bold text-xl">Educación complementaria</h3>
+
+  <div class="text-sm">
+    <ul class="list-['—'] pl-2">
+      {
+        complementaryEducation?.map(({ title, url, issuingOrganization, date }) => (
+          <li class="pl-2">
+            <div class="flex items-center justify-between">
+              <span>
+                {title} ({issuingOrganization})
+              </span>
+              <span>{date}</span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

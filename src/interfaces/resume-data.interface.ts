@@ -6,6 +6,7 @@ export interface ResumeData {
   location: string;
   work: Work[];
   education: Education[];
+  complementaryEducation?: ComplementaryEducation[];
   languages: Language[];
   skills: string[];
   projects: Project[];
@@ -47,6 +48,13 @@ export interface Education {
   degree: string;
   start: string;
   end: string;
+}
+
+export interface ComplementaryEducation {
+  title: string;
+  url?: string;
+  issuingOrganization: string;
+  date: string;
 }
 
 export interface Language {
