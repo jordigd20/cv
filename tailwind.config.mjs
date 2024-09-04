@@ -16,7 +16,8 @@ export default {
         primary: 'var(--primary)'
       },
       fontFamily: {
-        sans: ['Onest Variable', ...defaultTheme.fontFamily.sans],
+        // sans: ['Onest Variable', ...defaultTheme.fontFamily.sans],
+        sans: ['Arial', ...defaultTheme.fontFamily.sans],
       },
     },
   },
