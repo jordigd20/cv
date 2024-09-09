@@ -59,8 +59,7 @@ export const RESUME_DATA: ResumeData = {
         'Realización de un API Rest con NodeJS y MongoDB',
         'Uso de la metodología Scrum para la gestión del proyecto',
         'Creación e integración en el sistema de un asistente virtual con Dialogflow',
-        'Gestión de pagos con el API de Paypal',
-        'Recopilación de estadísticas según los KPI de la aplicación',
+        'Creación de un dashboard con estadísticas según los KPI de la aplicación',
         'Sistema de animaciones, movimientos de cámara e iluminación en un entorno gráfico 3D con WebGL'
       ],
       start: '2021',
@@ -79,23 +78,23 @@ export const RESUME_DATA: ResumeData = {
     {
       title: 'NestJS + Microservicios: Aplicaciones escalables y modulares',
       date: '2024',
-      issuingOrganization: 'Udemy',
+      issuingOrganization: 'Udemy'
     },
     {
       title: 'NestJS: Desarrollo backend escalable con Node',
       date: '2024',
-      issuingOrganization: 'Udemy',
+      issuingOrganization: 'Udemy'
     },
     {
       title: 'Principios SOLID y Clean Code',
       date: '2023',
-      issuingOrganization: 'Udemy',
+      issuingOrganization: 'Udemy'
     },
     {
       title: 'Ionic 6: Crear aplicaciones IOS, Android con Angular',
       date: '2023',
-      issuingOrganization: 'Udemy',
-    },
+      issuingOrganization: 'Udemy'
+    }
   ],
   languages: [
     {
